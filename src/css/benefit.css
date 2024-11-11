@@ -1,0 +1,46 @@
+.container {
+    max-width: 1116px;
+    margin: 0 auto;
+}
+
+.benefit {
+    padding-top: 56px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.benefit__block {
+    padding-top: 27px;
+    padding-bottom: 110px;
+}
+
+.benefit__block-title {
+    margin-top: 48px;
+    font-family: "Standard CT Stencil", "sans-serif";
+    font-size: clamp(46px, 4.5vw, 68px);
+    font-weight: 700;
+    line-height: 100%;
+    text-align: left;
+    text-transform: uppercase;
+    text-wrap: nowrap;
+}
+
+.benefit__block-title_blue {
+    color: var(--main-blue-color);
+}
+
+.benefit__block-subtitle {
+    margin-top: 24px;
+}
+
+.benefit__block-action {
+    margin-top: 56px;
+}
+
+.benefit__image img {
+    width: 100%;
+}
+
+.benefit__image {
+    width: 584px;
+}

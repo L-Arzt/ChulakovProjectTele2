@@ -1,0 +1,9 @@
+@font-face {
+    font-family: "Tele2 DisplaySerif Web SHORT";
+    src: url("../fonts/tele2_displayserif-regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Standard CT Stencil";
+    src: url("../fonts/StandardCTStencil-Bold.ttf") format("truetype");
+}
