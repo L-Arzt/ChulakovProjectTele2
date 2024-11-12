@@ -1,20 +1,20 @@
 import { formFeedbackFunc } from './form-feedback-func.js'
 
 document.addEventListener('DOMContentLoaded', () => {
-    const formInstructions = document.querySelector(".instructions__form");
-    const formInstructionsTel = formInstructions.querySelector("input[type='tel']");
-    const formInstructionsCheckbox = formInstructions.querySelector("input[type='checkbox']");
-    const formInstructionsSubmit = formInstructions.querySelector(".instructions__form-action .btn");
+    const formmanual = document.querySelector(".manual__form");
+    const formmanualTel = formmanual.querySelector("input[type='tel']");
+    const formmanualCheckbox = formmanual.querySelector("input[type='checkbox']");
+    const formmanualubmit = formmanual.querySelector(".manual__form-action .customButton");
 
-    formInstructionsSubmit.addEventListener("click", (e) => {
+    formmanualubmit.addEventListener("click", (e) => {
         e.preventDefault();
-        if (formInstructionsTel.value.length < 18) {
-            formFeedbackFunc(formInstructions, "Неправильно введён номер", false);
-        } else if (!formInstructionsCheckbox.checked) {
-            formFeedbackFunc(formInstructions, "Необходимо принять условия соглашения", false);
+        if (formmanualTel.value.length < 18) {
+            formFeedbackFunc(formmanual, "Неправильно введён номер", false);
+        } else if (!formmanualCheckbox.checked) {
+            formFeedbackFunc(formmanual, "Необходимо принять условия соглашения", false);
         } else {
-            formFeedbackFunc(formInstructions, "Промокод выслан на ваш номер", true);
-            formInstructions.reset();
+            formFeedbackFunc(formmanual, "Промокод выслан на ваш номер", true);
+            formmanual.reset();
         }
     });
 })

@@ -10,6 +10,7 @@
     padding: 142px 0px 0px 162px;
     border: none;
     opacity: 0;
+    
 }
 
 .modal[open] {
@@ -66,11 +67,11 @@
     pointer-events: inherit;
 }
 
-.form-modal .instructions__form-number {
+.form-modal .manual__form-number {
     margin-top: 0px;
 }
 
-.form-modal .instructions__form {
+.form-modal .manual__form {
     max-width: 100%;
 }
 
@@ -78,7 +79,7 @@
     background-color: rgba(0, 0, 0, 0.405);
 }
 
-.form-modal .instructions__form-action {
+.form-modal .manual__form-action {
     text-align: left;
 }
 

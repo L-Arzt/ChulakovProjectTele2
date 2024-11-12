@@ -1,25 +1,25 @@
-.rate {
+.invite {
     padding-top: 162px;
     display: flex;
     justify-content: space-between;
 }
 
-.rate__block {
+.invite__block {
     max-width: 513px;
 }
 
-.rate__block-title {
+.invite__block-title {
     margin-top: 38px;
 }
 
-.rate__block-subtitle {
+.invite__block-subtitle {
     margin-top: 30px;
 }
 
-.rate__block-action {
+.invite__block-action {
     margin-top: 48px;
 }
 
-.rate__block-action_hidden {
+.invite__block-action_hidden {
     display: none;
 }

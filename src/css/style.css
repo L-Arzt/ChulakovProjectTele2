@@ -1,15 +1,93 @@
-@import 'variables.css';
 @import 'tele2Fonts.css';
-@import 'base.css';
-@import 'title.css';
-@import 'subtitle.css';
-@import 'btn.css';
-@import 'button-back.css';
+@import 'customButton.css';
+@import 'buttonBack.css';
 @import 'header.css';
-@import 'benefit.css';
-@import 'present.css';
-@import 'instructions.css';
-@import 'rate.css';
+@import 'promo.css';
+@import 'terrabyte.css';
+@import 'manual.css';
+@import 'invite.css';
 @import 'footer.css';
 @import 'modal.css';
 @import 'media.css';
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    color: white;
+}
+
+body {
+    position: relative;
+    background-color: var(--main-bg-color);
+}
+
+.scroll-lock {
+    overflow: hidden
+}
+
+a:hover {
+    color: var(--hover-color);
+}
+
+a:active {
+    color: var(--main-blue-color);
+}
+
+
+/* title */
+.title {
+    color: white;
+    font-family: "Tele2 DisplaySerif Web SHORT", "serif";
+    font-size: clamp(24px, 3vw, 40px);
+    font-weight: 700;
+    line-height: 130%;
+    text-align: left;
+}
+
+.title_blue {
+    color: var(--main-blue-color);
+}
+
+.title_hidden {
+    display: none;
+}
+
+/* subtitle */
+.subtitle {
+    font-family: "Roboto", sans-serif;
+    font-size: clamp(18px, 1.5vw, 20px);
+    font-weight: 400;
+    line-height: 150%;
+    text-align: left;
+}
+
+.subtitle_hidden {
+    display: none;
+}
+
+.subtitle_16px {
+    font-size: 16px;
+    line-height: 138%;
+}
+
+.subtitle_14px {
+    font-size: 14px;
+    line-height: 138%;
+}
+
+.subtitle_13px {
+    font-size: 13px;
+    line-height: 18px;
+}
+
+/* color */
+:root {
+    --main-bg-color: rgb(31, 34, 41);
+    --main-blue-color: rgb(72, 204, 253);
+    --border-color: rgb(56, 61, 74);
+    --hover-color: rgb(176, 176, 176);
+}

@@ -1,23 +1,23 @@
-.present {
+.terrabyte {
     margin-top: 148px;
 }
 
-.present__subtitle {
+.terrabyte__subtitle {
     margin-top: 24px;
 }
 
-.present__advantages {
+.terrabyte__plus {
     margin-top: 56px;
     display: flex;
 }
 
-.present__advantages-block {
+.terrabyte__plus-block {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-right: 55px;
 }
 
-.present__advantages-block img {
+.terrabyte__plus-block img {
     margin-right: 16px;
 }

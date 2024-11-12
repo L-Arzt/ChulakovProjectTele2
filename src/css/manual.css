@@ -1,20 +1,21 @@
-.instructions {
+.manual {
     margin-top: 148px;
     display: flex;
     justify-content: space-between;
 }
 
-.instructions__form {
+.manual__form {
     max-width: 348px;
 }
 
-.instructions__form-number {
+.manual__form-number {
     margin-top: 64px;
     border-bottom: 2px solid rgb(143, 147, 153);
     padding-bottom: 5px;
+    border: none;
 }
 
-.instructions__form-number label {
+.manual__form-number label {
     display: block;
     color: rgb(143, 147, 153);
     font-family:  "Roboto", sans-serif;
@@ -24,39 +25,40 @@
     text-align: left;
 }
 
-.instructions__form-number input {
+.manual__form-number input {
     width: 100%;
     margin-top: 3px;
     background: transparent;
     border: none;
 }
 
-.instructions__form-number input:focus {
+.manual__form-number input:focus {
     outline: none;
 }
 
-.instructions__form-number input:hover {
+.manual__form-number input:hover {
     outline: 1px solid white;
     border-radius: 5px;
 }
 
-.instructions__form-personal {
+.manual__form-personal {
     margin-top: 24px;
     margin-left: 32px;
+    border: none;
 }
 
-.instructions__form-checkbox {
+.manual__form-checkbox {
     position: absolute;
     z-index: -1;
     opacity: 0;
 }
 
-.instructions__form-personal label {
+.manual__form-personal label {
     position: relative;
     user-select: none;
 }
 
-.instructions__form-personal label::before {
+.manual__form-personal label::before {
     position: absolute;
     top: 0px;
     left: -32px;
@@ -70,32 +72,34 @@
 
 }
 
-.instructions__form-checkbox:checked+label::before {
-    background-image: url("../images/Checked.png");
+.manual__form-checkbox:checked+label::before {
+    background-image: url("../images/check.png");
 }
 
-.instructions__form-checkbox:not(:disabled):not(:checked)+label:hover::before {
+.manual__form-checkbox:not(:disabled):not(:checked)+label:hover::before {
     border-color: #b3d7ff;
 }
 
-.instructions__form-checkbox:not(:disabled):active+label::before {
+.manual__form-checkbox:not(:disabled):active+label::before {
     background-color: #b3d7ff;
     border-color: #b3d7ff;
+
 }
 
-.instructions__form-checkbox:focus+label::before {
+.manual__form-checkbox:focus+label::before {
     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 
-.instructions__form-checkbox:focus:not(:checked)+label::before {
+.manual__form-checkbox:focus:not(:checked)+label::before {
     border-color: #80bdff;
 }
 
-.instructions__form-action {
+.manual__form-action {
     margin-top: 32px;
+    
 }
 
-.instructions__form-feedback {
+.manual__form-feedback {
     display: flex;
     align-items: center;
     height: 48px;
@@ -103,28 +107,30 @@
     padding: 12px;
     border-radius: 8px;
     background-color: rgb(38, 43, 54);
+    
 }
 
-.instructions__form-feedback_hidden {
+.manual__form-feedback_hidden {
     display: none;
+    
 }
 
-.instructions__form-feedback img {
+.manual__form-feedback img {
     display: block;
     margin-right: 14px;
 }
 
-.instructions__list {
+.manual__list {
     width: 598px;
 }
 
-.instructions__list-item {
+.manual__list-item {
     display: flex;
     align-items: center;
     margin-bottom: 32px;
 }
 
-.instructions__list-number {
+.manual__list-number {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -141,6 +147,6 @@
     line-height: 130%;
 }
 
-.instructions__list-text {
+.manual__list-text {
     max-width: 494px;
 }
